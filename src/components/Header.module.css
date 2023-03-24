@@ -1,0 +1,73 @@
+h1{
+    font-size: 3em;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #314aeb;
+    padding: 20px;
+}
+
+.header label {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.header input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+.header .errorInput{
+    border: 1px solid red;
+}
+
+.header select {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+.header select,
+.header input {
+    box-sizing: border-box;
+    height: 50px;
+    margin: 0;
+    font-family: inherit;
+}
+
+.header div {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .title{
+    display: grid;
+    grid-template-columns: max-content 100px;
+    justify-content: center;
+}
+
+.logo{
+    margin-left: 30px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
